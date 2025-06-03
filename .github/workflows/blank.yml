@@ -53,23 +53,23 @@ jobs:
         run: |
           source venv/bin/activate
           cd scraper
-          zappa update dev_scraper
+          zappa update devScraper
 
       - name: Check scraper Zappa status
         run: |
           source venv/bin/activate
           cd scraper
-          zappa status dev_scraper
+          zappa status devScraper
 
       # Despliegue con Zappa del módulo parser
       - name: Deploy parser with Zappa
         run: |
           source venv/bin/activate
           cd parser
-          zappa update dev_parser
+          zappa update devParser
 
       - name: Check parser Zappa status
         run: |
           source venv/bin/activate
           cd parser
-          zappa status dev_parser
+          zappa status devParser
